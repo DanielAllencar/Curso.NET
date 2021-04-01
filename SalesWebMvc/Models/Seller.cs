@@ -17,6 +17,7 @@ namespace SalesWebMvc.Models
         //referencia de chaves de ligação da tabela exemplo um pra um
         public Department Department { get; set; }
         //referencia de chaves de ligação da tabela exemplo de muitos pra um
+        public int DepartmentId { get; set; }
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
 
         //construtor vazio
